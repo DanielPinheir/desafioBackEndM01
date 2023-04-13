@@ -2,6 +2,7 @@ const processData = (input) => {
   const listaSenhas = input.trim().split("\n");
   const senha = listaSenhas[0];
   const senhaDigitada = listaSenhas[1];
+
   let i = 0,
     j = 0;
   while (i < senha.length && j < senhaDigitada.length) {
