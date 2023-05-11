@@ -34,24 +34,24 @@ const players = [
 ];
 
 const vencedor = (listaJogadores) => {
-  const jogadaZero = [];
-  const jogadaUm = [];
+  const jogadasZero = [];
+  const jogadasUm = [];
   for (let jogador of listaJogadores) {
     if (jogador.jogada === 0) {
-      jogadaZero.push(jogador);
+      jogadasZero.push(jogador);
     }
 
     if (jogador.jogada === 1) {
-      jogadaUm.push(jogador);
+      jogadasUm.push(jogador);
     }
   }
 
-  if (jogadaZero.length !== 1 && jogadaUm.length !== 1) {
+  if (jogadasZero.length !== 1 && jogadasUm.length !== 1) {
     console.log(`NINGUEM`);
-  } else if (jogadaZero.length === 1) {
-    console.log(jogadaZero[0].nome);
+  } else if (jogadasZero.length === 1) {
+    console.log(jogadasZero[0].nome);
   } else {
-    console.log(jogadaUm[0].nome);
+    console.log(jogadasUm[0].nome);
   }
 };
 
